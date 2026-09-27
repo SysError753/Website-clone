@@ -1,0 +1,388 @@
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Inter', Helvetica, Arial, Lucida, sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    :root {
+        --theme-color: #ffd741;
+        --cover-color: #f2f1ed;
+        --footer-bg-color: #232323;
+    }
+
+    header {
+        position: sticky;
+        top: 0px;
+    }
+
+    nav {
+        display: flex;
+        background-color: #f6f6f6;
+        align-items: center;
+        border: 1px solid #cecece;
+        margin: 10px 25px;
+        border-radius: 5px;
+        padding: 10px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    nav .items ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    nav .items ul li {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    nav .items ul li img {
+        width: 16px;
+        height: 16px;
+    }
+
+    nav .nav-btn .download-btn {
+        background-color: var(--theme-color);
+    }
+
+    nav .nav-btn .language-btn {
+        display: flex;
+        gap: 7px;
+    }
+
+    nav .nav-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav .nav-btn .globe-icon {
+        width: 15px;
+    }
+
+    nav .nav-btn .search-icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    nav .nav-btn button {
+        padding: 10px 25px;
+        border: none;
+        border-radius: 5px;
+        background-color: #f6f6f6;
+        cursor: pointer;
+    }
+
+    main {
+        margin: 0px 25px;
+    }
+
+    main .homepage-msg {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 270px;
+    }
+
+    main .homepage-msg * {
+        padding: 7px;
+    }
+
+    main .homepage-msg h1 {
+        font-weight: 500;
+        font-size: 50px;
+    }
+
+    main .homepage-msg p {
+        font-weight: 250;
+        font-size: 18px;
+    }
+
+    main .homepage-msg pre {
+        font-weight: 250;
+        font-size: 18px;
+    }
+
+    .OSdownloads {
+        height: 250px;
+        margin: 5px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .OSdownloads .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+        background-color: var(--cover-color);
+        border-radius: 10px;
+    }
+
+    .OSdownloads .container h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin: 20px;
+    }
+
+    .OSdownloads .container .download-btn {
+        padding: 10px 25px;
+        border: none;
+        background-color: var(--theme-color);
+        border-radius: 5px;
+        margin: 30px 0px 0px 0px;
+        font-weight: 500;
+    }
+
+    .OSdownloads .container p {
+        font-size: 14px;
+        font-weight: 800;
+        color: #b9b8b7;
+    }
+
+    .OSdownloads .container h1 .pre-logo {
+        width: 40px;
+    }
+
+    .OSdownloads .container h1 .language-icon {
+        width: 35px;
+    }
+
+    .OSdownloads .container .SHA1 {
+        font-size: 12px;
+        color: black;
+        font-weight: 400;
+        padding: 4px;
+    }
+
+    .OSdownloads .container .SHA2 {
+        font-size: 10px;
+        color: black;
+        font-weight: 400;
+    }
+
+    main h2 {
+        display: flex;
+        justify-content: center;
+        padding: 50px 0px 100px 0px;
+        font-weight: 600;
+    }
+
+    main h2 a {
+        color: aqua;
+        text-decoration-color: aqua;
+        font-weight: 600;
+    }
+
+    .Content {
+        background-color: var(--cover-color);
+        min-height: 500px;
+        color: #212121;
+    }
+
+    .Content h1 {
+        display: flex;
+        justify-content: center;
+        padding: 50px 0px 30px 0px;
+        font-size: 45px;
+        font-weight: 500;
+    }
+
+    .Content h1 a {
+        color: aqua;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .Content .last {
+        font-size: 30px;
+    }
+
+    .trial-vid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .trial-vid .containers {
+        width: 550px;
+        /* margin: 20px; */
+    }
+
+    .trial-vid .containers p {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .trial-vid .containers p:nth-child(2) {
+        font-size: 25px;
+        display: flex;
+        font-weight: 500;
+        justify-content: flex-start;
+    }
+
+    .trial-vid .containers .Video {
+        width: 550px;
+        height: 300px;
+        border-radius: 10px;
+    }
+
+    .FAQs {
+        background-color: white;
+        min-height: 500px;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .FAQs ul h1 {
+        font-size: 50px;
+        font-weight: 500;
+        padding: 50px;
+
+    }
+
+    .FAQs ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        align-items: center;
+    }
+
+    .FAQs ul li {
+        border: 1px solid black;
+        background-color: var(--cover-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+        width: 70vw;
+        padding: 15px 20px;
+        margin: 15px;
+        font-size: 20px;
+        color: #212121;
+        cursor: pointer;
+    }
+
+    .FAQs ul li img {
+        width: 30px;
+    }
+
+    .product-info {
+        min-height: 200px;
+        background-color: var(--cover-color);
+        display: flex;
+        justify-content: center;
+        margin: 60px 0px;
+    }
+
+    .product-info .container {
+        width: 400px;
+        padding: 50px 70px;
+    }
+
+    .product-info .container p:first-child {
+        font-size: 30px;
+        padding: 20px 0px;
+        font-weight: 500;
+    }
+
+    footer>.box {
+        background-color: var(--footer-bg-color);
+        min-height: 300px;
+        margin: 40px 20px;
+        border-radius: 13px;
+        padding: 30px;
+        /* gap: 300px; */
+        justify-content: space-between;
+        color: #ffffff;
+        display: flex;
+
+    }
+
+    footer .box .left {
+        width: 26%;
+    }
+
+    footer .box .left .top p {
+        padding: 10px 0px;
+        font-size: 18px;
+    }
+
+    footer .box .left .bottom p {
+        padding: 5px 0px;
+        font-size: 17px;
+    }
+
+    footer .box .left .bottom p:nth-child(2) {
+        padding: 5px 0px;
+        color: #bababa;
+        font-size: 15px;
+    }
+
+    footer .box .left {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        font-weight: 400;
+    }
+
+    footer .box .left .bottom button {
+        background-color: var(--theme-color);
+        border: none;
+        padding: 10px 25px;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    footer .box .left .bottom input {
+        background-color: #3b3b3b;
+        padding: 13px 25px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    footer .box .right {
+        display: flex;
+        justify-content: right;
+    }
+
+    footer .box .right ul {
+        list-style: none;
+        padding: 20px;
+    }
+
+    footer .box .right ul li {
+        padding: 6px;
+        color: #ccc7c7;
+    }
+
+    footer .box .right .ul li:first-child {
+        font-size: 22px;
+        color: white;
+        cursor: default;
+    }
+
+    footer .box .right .ul li:hover {
+        color: white;
+        cursor: pointer;
+    }
